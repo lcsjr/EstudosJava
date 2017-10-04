@@ -12,18 +12,21 @@ public class AccountTest {
 		// cria o objeto Scanner para entrada de dados via prompt
 		Scanner entradaDados = new Scanner(System.in);
 		
-		// cria objeto Account
-		Account myAccount = new Account();
+		// cria objeto Account passando dois parâmetros de inicialização
+		Account myAccount = new Account("Luiz Santos", 0);
+		myAccount.deposito(12789.90);
 				
-		System.out.printf("Nome Inicial é:%s%n%n", myAccount.getName());
-		
+		/* Código antigo.. antes da implementação do construtor 
+		System.out.printf("Nome Inicial é:%s%n%n", myAccount.getName());		
 		System.out.println("Por favor, informe o nome:");
 		String theName= entradaDados.nextLine();
 		myAccount.setName(theName);
 		System.out.println();
+		*/
 		
-		System.out.printf("O nome informado para o objeto myAccount é:%n%s%n", myAccount.getName());
+		System.out.println("O Saldo da conta de " + myAccount.getName()+" é "+ myAccount.getBalance());
 		
+		// fecha oobjeto de entradaDados
 		entradaDados.close();
 	}
 
