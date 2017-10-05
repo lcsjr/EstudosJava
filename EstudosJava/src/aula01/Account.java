@@ -1,6 +1,6 @@
 package aula01;
 
-// Livro: Java - Como Programar 10ª edição
+// Livro: Java - Como Programar 10ï¿½ ediï¿½ï¿½o
 
 public class Account {
 	
@@ -14,10 +14,10 @@ public class Account {
 	public Account (String name, double balance ) {
 		this.name = name;
 		/*
-		 * verifica se o parâmetro recebido de balance é maior que zero,
-		 * se não ele mantém seu valor default de inicialização
+		 * verifica se o parï¿½metro recebido de balance ï¿½ maior que zero,
+		 * se nï¿½o ele mantï¿½m seu valor default de inicializaï¿½ï¿½o
 		 */
-		if (balance > 0.0 ) {
+		if (balance != 0.0 ) {
 			this.balance = balance;
 		}			
 	}
